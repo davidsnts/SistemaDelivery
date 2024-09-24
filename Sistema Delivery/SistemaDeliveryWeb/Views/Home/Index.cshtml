@@ -1,8 +1,47 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+﻿<div id="geral">
+    <img id="imagem" src="./img/capa.jpg" />
+    <div id="faixa">
+        <div id="faixa-items">
+            <div>
+                <h1>Bem vindo ao Restaurante Digital</h1>
+            </div>
+            <div class="d-flex gap-1">
+                <h4>Deseja realizar um pedido? </h4>
+                <a class="btn btn-primary btn-danger rounded-0 fw-bold text-uppercase">Clique aqui</a>
+            </div>
+        </div>
+    </div>
 </div>
+<style>
+    #geral{
+        background: red;
+        width: 100%;
+        height: 80vh;
+        overflow: hidden;
+        position: relative
+    }
+    h1{
+        text-align:center;
+    }
+    #faixa{
+        width: 100%;
+        height: 250px;
+        position: absolute;
+        top: 0;
+    }
+    #faixa-items{
+        display: flex;
+        flex-direction: column;
+        align-content: space-evenly;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color:white;
+        height: 250px;
+    }
+    #imagem {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+</style>
